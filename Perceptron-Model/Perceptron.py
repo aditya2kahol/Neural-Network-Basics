@@ -39,4 +39,5 @@ class Perceptron:
 		my_guess = self.guess(inputs)
 		error = target - my_guess
 		for i in range(self.size):
+			#weight update step
 			self.weights[i] += lr*error*inputs[i]
