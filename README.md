@@ -1,5 +1,5 @@
 # Neural-Network-Basics
-From Perceptron model to Deep Neural Network from scratch in Python. 
+Aim of this Repository: From Perceptron model to Deep Neural Network (from scratch) in Python. 
 
 ** Currently working on a basic Neural network model.
 
