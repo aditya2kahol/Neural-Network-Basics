@@ -7,12 +7,13 @@
 from random import uniform as unif
 
 class Perceptron:
-	weights = []
-	Output = None
+	
+	weights = None
 	
 	#Constructor, which initializes weights at random.
 	def __init__(self,size):
-		self.size = size
+		self.size = size + 1 # one extra weight vector for the bias term 
+		self.weights = []
 		for i in range(size):
 			self.weights.append(round(unif(-1,1),4))
 
@@ -26,7 +27,7 @@ class Perceptron:
 
 	#My Output function, which returns the guessed result.
 	def guess(self,inputs):
-		Sum = 1
+		Sum = 0
 		for i in range(self.size):
 			Sum += self.weights[i]*inputs[i]
 		self.Output = self.Sign(Sum)
