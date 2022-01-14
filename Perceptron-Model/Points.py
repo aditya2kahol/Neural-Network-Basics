@@ -20,7 +20,7 @@ class Points:
 			self.label = -1
 
 	def return_points(self):
-		return [self.x,self.y]
+		return [self.x,self.y,1] #Adding an extra 1 to compensate for the bias.
 
 	def return_label(self):
 		return self.label
