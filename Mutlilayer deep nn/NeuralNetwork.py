@@ -28,6 +28,11 @@ class NeuralNetwork:
 	y_cap = None ## Output value/vector
 
 	def __init__(self, n_features, n_Output, n_layers = 2, lr = 0.01):
+		"""
+			n_features: number of features.
+			n_Output: number of output neurons
+			n_layers: number of layers for the network.
+		"""
 		self.input_neurons = n_features
 		self.hidden_neurons = n_features
 		self.output_neurons = n_Output
