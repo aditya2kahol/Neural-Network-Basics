@@ -3,7 +3,6 @@
 	Author: Aditya Kahol
 """
 import numpy as np
-from random import choice
 
 def sigmoid(A):
 	r,c = A.shape
